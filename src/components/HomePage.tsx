@@ -1,12 +1,6 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import ParticleCanvas from "./ParticleCanvas";
-import {
-  FiGithub,
-  FiLinkedin,
-  FiTwitter,
-  FiDribbble,
-  FiMail,
-} from "react-icons/fi";
+
 import {
   FaDribbble,
   FaFacebook,
@@ -22,9 +16,10 @@ export const HeroSection = ({
   scrollToAbout: () => void;
 }) => {
   const name = "Nikesh Dahal";
-  const tagline = "Crafting immersive digital experiences";
+  const tagline =
+    "Engineering seamless digital experiences for web, mobile, and everything in between.";
   const description =
-    "Full-stack developer & UI/UX enthusiast focused on building performant, accessible, and visually stunning applications.";
+    "I create robust backend systems, elegant frontends, and mobile-ready APIs enabling businesses to launch fast, grow reliably, and scale globally.";
 
   // Social media data
   const socialLinks = [
@@ -80,38 +75,38 @@ export const HeroSection = ({
     },
   };
 
-  const socialContainerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 2,
-      },
-    },
-  };
+  // const socialContainerVariants = {
+  //   hidden: { opacity: 0 },
+  //   visible: {
+  //     opacity: 1,
+  //     transition: {
+  //       staggerChildren: 0.1,
+  //       delayChildren: 2,
+  //     },
+  //   },
+  // };
 
-  const socialItemVariants = {
-    hidden: { scale: 0, opacity: 0 },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 200,
-        damping: 15,
-      },
-    },
-    hover: {
-      scale: 1.2,
-      y: -5,
-      transition: {
-        type: "spring",
-        stiffness: 400,
-        damping: 10,
-      },
-    },
-  };
+  // const socialItemVariants = {
+  //   hidden: { scale: 0, opacity: 0 },
+  //   visible: {
+  //     scale: 1,
+  //     opacity: 1,
+  //     transition: {
+  //       type: "spring",
+  //       stiffness: 200,
+  //       damping: 15,
+  //     },
+  //   },
+  //   hover: {
+  //     scale: 1.2,
+  //     y: -5,
+  //     transition: {
+  //       type: "spring",
+  //       stiffness: 400,
+  //       damping: 10,
+  //     },
+  //   },
+  // };
 
   return (
     <section className="relative flex flex-col items-center justify-center min-h-screen px-6 text-white overflow-hidden">
@@ -227,8 +222,8 @@ export const HeroSection = ({
           animate={{ opacity: 1 }}
           transition={{ delay: 2.2 }}
         >
-          <p className="text-sm font-light mb-2 text-cyan-200">Explore more</p>
-          <div className="w-6 h-10 border-2 border-cyan-300 rounded-full flex justify-center">
+          <p className="text-sm font-light mb-2 ">Explore more</p>
+          <div className="w-6 h-10 border-2 border-cyan-300 rounded-full flex justify-center mb-10">
             <motion.div
               className="w-1 h-3 bg-cyan-300 rounded-full mt-2"
               animate={{

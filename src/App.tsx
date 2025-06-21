@@ -4,7 +4,6 @@ import InteractiveLoader from "./components/loader";
 import { Footer } from "./components/footer";
 import { Navigation } from "./components/navigation";
 import AboutSection from "./components/About";
-import { NoPage } from "./components/test";
 // import ProjectsSection from "./components/Projects";
 // import ContactSection from "./components/Contact";
 
