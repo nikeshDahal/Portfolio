@@ -10,7 +10,7 @@ const AboutSection = forwardRef<HTMLElement | null, AboutSectionProps>(
     const sectionRef = useRef<HTMLElement | null>(null);
     const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
     const isMobile = useMediaQuery({ maxWidth: 1023 }); // Matches lg breakpoint
-
+    console.log(props);
     useImperativeHandle(ref, () => {
       if (sectionRef.current === null) {
         throw new Error("Ref not yet assigned");

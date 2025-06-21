@@ -1,9 +1,4 @@
-import {
-  motion,
-  useMotionValue,
-  animate,
-  AnimatePresence,
-} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import type { RefObject } from "react";
 import {
@@ -352,8 +347,6 @@ export const Navigation = ({ sections }: NavigationProps) => {
       activeIcon: <FiMail className="w-5 h-5 text-amber-400" />,
     },
   ].filter(Boolean);
-  const scaleValues = navItems.map(() => useMotionValue(1));
-  const yValues = navItems.map(() => useMotionValue(0));
 
   const scrollTo = (ref: RefObject<HTMLDivElement>, index: number) => {
     setActiveItem(index);
